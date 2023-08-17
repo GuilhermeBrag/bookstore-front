@@ -4,7 +4,7 @@
         <h1>Categorias</h1>
     </div>
 
-    <button class="button" mat-stroked-button>NOVA CATEGORIA</button>
+    <button class="button" (click)= "navegarParaCategoriaCreate()"mat-stroked-button>NOVA CATEGORIA</button>
      
 
     <div class="mat-elevation-z8 content-table">
@@ -22,7 +22,7 @@
               <td mat-cell *matCellDef="let row"> {{ row.nome }} </td>
             </ng-container>
           
-            <!-- Weight Column -->
+            <!-- Weight Column -->  
             <ng-container matColumnDef="descricao">
               <th mat-header-cell *matHeaderCellDef> DESCRIÇÃO </th>
               <td mat-cell *matCellDef="let row"> {{ row.descricao }} </td>
